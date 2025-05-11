@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+    <link rel="stylesheet" href="form - Copy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <video autoplay loop muted id="background_video">
+      <source src="videoBG3.mp4" type="video/mp4">
+    </video>
+    <form >
+        <fieldset>
+            <legend>required</legend>
+        <label>
+            username <input class="a" type="text" required>
+        </label>
+        <label >
+            phone number <input class="a" type="tel" required>
+        </label>
+        <label>
+            e-mail <input class="a" type="email"required>
+        </label>
+        <label >
+            password <input class="a" type="password" required>
+        </label>
+    </fieldset>
+        <label >
+            Gender 
+        </label>
+         <input class="b" type="radio" value="male"><label class="inline_lable">Male</label>
+        <br>
+       <input class="b" type="radio" value="female">  <label class="inline_lable">Female</label>
+        <label > 
+            traveling date 
+        </label>
+        <input class="a" type="date">
+        <label >
+            profil picture
+        </label>
+        <input class="a" type="file">
+        <label >
+            passport
+        </label>
+        <input class="a" type="file">
+        <label >
+           visa
+        </label>
+        <input class="a" type="file">
+        <label > 
+            where would you like to travel
+        </label>
+        <input  list="programming" name="prog">
+        <datalist  id="programming">
+            <optgroup>in egypt</optgroup>
+            <option value="alex">
+            <option value="cairo">
+            <option value="giza">
+            <option value="aswan">
+            <optgroup>in europe</optgroup>
+            <option value="spain">
+                <option value="portugal">
+                <option value="england">
+                <option value="france">
+        </datalist>
+        <label >
+            pleas check the services that you need
+        </label>
+        <input class="b" type="checkbox" value="airline">  <label class="inline_lable" > airline tickets</label>
+        <br>
+         <input class="b" type="checkbox" value="car"><label class="inline_lable" >rental car</label>
+         <br>
+         <input class="b" type="checkbox" value="car"><label class="inline_lable" >hotel accomadations</label>
+         <br>
+        <input  type="submit" value="submit">
+        <input  type="reset" value="reset">
+      </form> 
+</body>
+</html>
